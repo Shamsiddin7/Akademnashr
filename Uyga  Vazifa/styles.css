@@ -1,0 +1,106 @@
+:root {
+    --numbers-color: #000000;
+    --btn-hover-color: #7C501B;
+    --about-color: #FCEAD0;
+    --main-color: #FFFFFF;
+    --btn-color: #7C4D15;
+    --background-color: #EFA45F; 
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    width: 1021px;
+    height: 669px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 105px;
+    padding-top: 82px;
+    padding-right: 181px;
+    padding-bottom: 51px;
+    border: 1px solid var(--main-color); 
+}
+
+.left-side {
+    padding-left: 111px;
+    padding-top: 44px;
+    padding-right: 599px;
+    padding-bottom: 320px;
+}
+.image {
+    border-radius: 150px;
+}
+.account-name {
+    width: 226px;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--btn-hover-color);
+    font-family: Inter;
+    font-size: 30.625px;
+    font-weight: 700;
+}
+.account-bio {
+    width: 140px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--btn-hover-color);
+    font-family: Khula;
+    font-size: 22.5px;
+    font-weight: 300;
+}
+.btn {
+    width: 300px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 10px solid var(--btn-hover-color);
+    background: var(--btn-color );
+}
+.btn-about{
+    width: 163px;
+    height: 36.222px;
+    flex-shrink: 0;
+    color: var(--main-color);
+    font-family: Khula;
+    font-size: 34.02px;
+    font-weight: 700;
+    padding-bottom: 13px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+.info-about-profile {
+    width: 281px;
+    height: 207px;
+    flex-shrink: 0;
+    background: var(--about-color);
+    
+}
+.numb {
+    width: 114px;
+    height: 77.727px;
+    flex-shrink: 0;
+    color: #000;    
+    font-family: Khula;
+    font-size: 58.295px;
+    font-weight: 300;
+}
+.name {
+    width: 79.313px;
+    height: 47px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Khula;
+    font-size: 33.047px;
+    font-weight: 300;
+}
+
+
+

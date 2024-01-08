@@ -1,0 +1,335 @@
+@import url(./fonts.css);
+
+/* CUSTOM PROPS */
+:root {
+    --orange: #FF7500;
+    --white: #fff;
+    --dark-blue: #252420;
+    --roboto: 'Roboto';
+    --robotCondesed: "RobotoCondensed";
+}
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1130px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+
+
+/* header */
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__line {
+    width: 100%;
+    height: 5px;
+    background-color: var(--orange);
+}
+
+.site-header__nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    transition: .5s;
+}
+.logo:hover {
+    opacity: 0.8;
+}
+.logo:active {
+    opacity: .6;
+}
+.logo-image {
+    width: 38px;
+    height: 59px;
+}
+.logo-name {
+    font-family: var(--robotCondesed);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.logo-name::after {
+    content: "nashr";
+    color: var(--orange);
+}
+.site-header__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.site-header__link {
+    color: #000;
+    font-family: var(--roboto);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.site-header__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    transition: .5s;
+}
+.site-header__link:hover::after{
+    width: 100%;
+}
+.site-header__link:hover {
+    color: var(--orange);
+}
+
+.all-btn {
+    padding: 12px 24px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    letter-spacing: 0.5px;
+    transition: .5s;
+}
+.all-btn:hover {
+    opacity: .8;
+}
+.all-btn:active {
+    opacity: .6;
+}
+
+/* SITE HERO */
+
+.site-hero {
+    background-color: var(--dark-blue);
+}
+.site-hero__title {
+    max-width: 339px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--robotCondesed);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+}
+.site-hero__desc{
+    max-width: 387px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.5px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.site-hero__img {
+    border-radius: 8px;
+    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
+    object-fit: cover;
+    transform: translateY(40px);
+}
+
+/* ABOUT SECTION */
+.about {
+    padding-top: 223px;
+    padding-bottom: 223px;
+}
+.about-title {
+    max-width: 435px;
+    width: 100%;
+    color: #000;
+    font-family: var(--robotCondesed);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120%; /* 86.4px*/
+    letter-spacing: 0.5px;
+    margin-bottom: 72px;
+}
+.about-title::before{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: var(--orange);
+    display: block;
+    margin-bottom: 24px;
+}
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+.about-card {
+    min-width: 340px;
+    width: 100%;
+}
+.about-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 117, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-card__title {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #000;
+    font-family: var(--robotCondesed);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px*/
+    letter-spacing: 0.5px;
+}
+.about-card__text {
+    max-width: 314px;
+    width: 100%;
+    color: #000;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.5px;
+}
+
+/* SALE SECTION */
+
+.sale {
+    padding-top: 117px;
+    padding-bottom: 165px;
+}
+.sale-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border-radius: 12px;
+    padding: 0 64px; 
+}
+.sale-desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.sale-desc__title {
+    min-width: 440px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--robotCondesed);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.5px;
+
+}
+.sale-desc__text {
+    min-width: 440px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.5px;
+}
+.sale-desc__inner {
+    color: var(--orange);
+}
+.sale-desc__btn {
+    width: max-content;
+}
+.sale-book_image {
+    border-radius: 12px;
+    transform: translateY(-62px);
+}
+
+/* SITE FOOTER */
+
+.footer {
+    background-color: #F8F8F8;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-list {
+    display: flex;
+    column-gap: 16px;
+}
+.social-link {
+    color: var(--dark-blue);
+    transition: .5s;
+}
+.social-link:hover {
+    color: var(--orange);
+}
+.social-link:active{
+    opacity: .6;
+}
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(37, 36, 32, 0.50);
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.footer-link{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-blue);
+    transition: .5s;
+}
+.footer-link:hover{
+    color: var(--orange);
+}
+.footer-link:active{
+    opacity: .6;
+}
+
+ 
+
+
